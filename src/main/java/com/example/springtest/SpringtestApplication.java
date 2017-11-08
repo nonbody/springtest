@@ -30,13 +30,6 @@ public class SpringtestApplication {
 			for (TopicEntity topic : topicRepo.findAll()) {
 				log.info(topic.toString());
 			}
-			log.info("");
-			//
-			// TopicEntity topic = topicRepo.findOne(1L);
-			// log.info("findOne(1L):");
-			// log.info("--------------------------------");
-			// log.info(topic.toString());
-			// log.info("");
 
 		};
 	}
