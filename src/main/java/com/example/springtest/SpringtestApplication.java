@@ -25,7 +25,7 @@ public class SpringtestApplication {
 			topicRepo.save(new TopicEntity("Poring"));
 			topicRepo.save(new TopicEntity("Lunatic"));
 
-			log.info("findAll():");
+			log.info("findAll():"DSSS);
 			log.info("-------------------------------");
 			for (TopicEntity topic : topicRepo.findAll()) {
 				log.info(topic.toString());
