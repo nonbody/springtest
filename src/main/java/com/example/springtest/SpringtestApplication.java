@@ -15,7 +15,7 @@ public class SpringtestApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringtestApplication.class, args);
 	}
-
+		
 	@Bean
 	public CommandLineRunner demo(TopicRepo topicRepo) {
 		return (args) -> {
@@ -25,12 +25,11 @@ public class SpringtestApplication {
 			topicRepo.save(new TopicEntity("Poring"));
 			topicRepo.save(new TopicEntity("Lunatic"));
 
-			log.info("findAll():"DSSS);
+			log.info("findAll(): ");
 			log.info("-------------------------------");
 			for (TopicEntity topic : topicRepo.findAll()) {
 				log.info(topic.toString());
 			}
-
 		};
 	}
 
